@@ -30,7 +30,7 @@ Socialblade.loadChannelData = (channelId, options, callback) ->
   result = {}
 
   request
-    url: "http://socialblade.com/youtube/user/#{channelId}"
+    url: "http://socialblade.com/twitch/user/{channelId}"
   ,
     (err, res, body) ->
       return callback err  if err?
